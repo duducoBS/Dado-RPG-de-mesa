@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E041A"
+    android:foregroundGravity="center"
+    tools:context=".DadoFragment">
+
+    <!-- Texto exibindo o tipo de dado no cabeçalho -->
+
+    <TextView
+        android:id="@+id/meuTextView"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#ed1c24"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="dado de x lados"
+        android:textColor="#FFF200"
+        android:textSize="34sp" />
+
+    <!-- Botão representando o dado -->
+
+    <Button
+        android:id="@+id/rolarDado"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1px"
+        android:layout_marginBottom="10px"
+        android:backgroundTint="#ed1c24"
+        android:onClick="setRandom"
+        android:outlineAmbientShadowColor="@color/black"
+        android:shadowColor="#000000"
+        android:textColor="#fff200"
+        android:textSize="124sp" />
+
+    <!-- Texto orientando a ação de rolar o dado -->
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="550dp"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="Sacuda o celular ou clique no dado para rodar e gerar um número"
+        android:textColor="#FFF200"
+        android:textSize="25sp" />
+
+</FrameLayout>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <!-- Scroll lateral usado para rolagem da tela do aplicativo -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1E041A"
+            android:orientation="vertical">
+
+            <!-- Título do aplicativo -->
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="#ed1c24"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:text="Dados Para RPG de mesa"
+                android:textColor="#FFF200"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:text="Escolha um dado para rodar"
+                android:textColor="#FFF200"
+                android:textSize="25sp" />
+
+            <!-- Imagem para o dado de 4 lados -->
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                app:srcCompat="@drawable/d4" />
+
+            <!-- Botão para o dado de 4 lados -->
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="proxima4"
+                android:text="dado de 4 lados"
+                android:textColor="#FFF200"
+                android:textSize="20sp"
+                android:backgroundTint="#ed1c24"/>
+
+            <!-- Imagem para o dado de 6 lados -->
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                app:srcCompat="@drawable/d6" />
+
+            <!-- Botão para o dado de 6 lados -->
+
+            <Button
+                android:id="@+id/btn6lados"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="proxima6"
+                android:text="dado de 6 lados"
+                android:textColor="#FFF200"
+                android:textSize="20sp"
+                android:backgroundTint="#ed1c24"/>
+
+            <!-- Imagem para o dado de 8 lados -->
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="200dp"
+                android:layout_height="221dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                app:srcCompat="@drawable/d8"/>
+
+            <!-- Botão para o dado de 6 lados -->
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="proxima8"
+                android:text="dado de 8 lados"
+                android:textColor="#FFF200"
+                android:textSize="20sp"
+                android:backgroundTint="#ed1c24"/>
+
+            <!-- Imagem para o dado de 10 lados -->
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                app:srcCompat="@drawable/d10" />
+
+            <!-- Botão para o dado de 10 lados -->
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="proxima10"
+                android:text="dado de 10 lados"
+                android:textColor="#FFF200"
+                android:textSize="20sp"
+                android:backgroundTint="#ed1c24"/>
+
+            <!-- Imagem para o dado de 12 lados -->
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                app:srcCompat="@drawable/d12" />
+
+            <!-- Botão para o dado de 12 lados -->
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="proxima12"
+                android:text="dado de 12 lados"
+                android:textColor="#FFF200"
+                android:textSize="20sp"
+                android:backgroundTint="#ed1c24"/>
+
+            <!-- Imagem para o dado de 20 lados -->
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                app:srcCompat="@drawable/d20" />
+
+            <!-- Botão para o dado de 20 lados -->
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="proxima20"
+                android:text="dado de 20 lados"
+                android:textColor="#FFF200"
+                android:textSize="20sp"
+                android:backgroundTint="#ed1c24"/>
+
+            <!-- Imagem para o dado de 100 lados -->
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                app:srcCompat="@drawable/d100" />
+
+            <!-- Botão para o dado de 20 lados -->
+
+            <Button
+                android:id="@+id/button100"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="proxima100"
+                android:text="dados de 100 lados"
+                android:textColor="#FFF200"
+                android:textSize="20sp"
+                android:backgroundTint="#ed1c24"
+                android:layout_marginBottom="50dp"/>
+
+            <!--Nome dos membros do grupo-->
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:text="Criado por\nEduardo Balduino dos Santos\n RGM: 23725869\nEric Hideki Asato Ito\nRGM: 22819797\nJoão Vítor Conceição de Lima\n RGM: 30233313\nVitoria Bispo Lemos\n RGM: 23155850"
+                android:textColor="#FFF200"/>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
